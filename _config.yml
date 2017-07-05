@@ -72,3 +72,5 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:zhangbihua/zhangbihua.github.io.git
+  # branch: master
+  # message: [message]
