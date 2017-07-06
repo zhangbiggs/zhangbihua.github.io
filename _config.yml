@@ -4,9 +4,9 @@
 
 # Site
 title: biggs blog
-subtitle: biggs blog | javascript | font-End developer
-description: biggs blog | javascript | font-End developer
-author: zhangnbihua
+subtitle: javascript | Font-End developer
+description: javascript | Font-End developer
+author: zhangbihua
 ## language: zh-Hans | en | zh-hk
 language: zh-Hans
 timezone:
@@ -74,3 +74,6 @@ deploy:
   repo: git@github.com:zhangbihua/zhangbihua.github.io.git
   # branch: master
   # message: [message]
+
+# avatar
+avatar: https://avatars1.githubusercontent.com/u/13499245?v=3&s=460
