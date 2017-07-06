@@ -77,3 +77,10 @@ deploy:
 
 # avatar
 avatar: https://avatars1.githubusercontent.com/u/13499245?v=3&s=460
+
+# search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
