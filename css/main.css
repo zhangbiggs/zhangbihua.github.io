@@ -1360,10 +1360,9 @@ pre .javascript .function {
   font-size: 16px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 3px 0 40px 0;
   color: #888;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", "Source Code Pro", sans-serif;
-  font-size: 12px;
   text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
@@ -2692,7 +2691,7 @@ pre .javascript .function {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: #F44336;
 }
 .btn-bar {
   background-color: #fff;

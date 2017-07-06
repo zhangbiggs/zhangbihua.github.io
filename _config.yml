@@ -84,3 +84,9 @@ search:
   field: post
   format: html
   limit: 10000
+
+# Google Webmaster tools
+google_site_verification: G7kRKY6dddi9RD1fAzMjQBXcRCbCCFk2-4A_rydZ1Sc
+
+# creative_commons 许可协议说明
+creative_commons: by-nc-sa
