@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT bihua" />
+  <meta name="keywords" content="javasctipt,建造者模式," />
 
 
 
@@ -90,16 +90,17 @@
 
 
 
-<meta name="description" content="javascript | Front-End developer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="All tags">
-<meta property="og:url" content="https://zhangbihua.github.io/tags/index.html">
+<meta name="description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。  建造者模式包含如下四个角色： Builder-抽象建造者为创建一个产品对象的各个部件指定抽象接口； ConcreteBuilder-具体建造者实现了抽象建造者接口，实现各个部件的构造和">
+<meta name="keywords" content="javasctipt,建造者模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建造者模式(Builder)-设计模式">
+<meta property="og:url" content="https://zhangbihua.github.io/2017/05/05/Builder/index.html">
 <meta property="og:site_name" content="biggs blog">
-<meta property="og:description" content="javascript | Front-End developer">
-<meta property="og:updated_time" content="2017-07-06T18:04:44.910Z">
+<meta property="og:description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。  建造者模式包含如下四个角色： Builder-抽象建造者为创建一个产品对象的各个部件指定抽象接口； ConcreteBuilder-具体建造者实现了抽象建造者接口，实现各个部件的构造和">
+<meta property="og:updated_time" content="2017-07-07T16:20:29.774Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="All tags">
-<meta name="twitter:description" content="javascript | Front-End developer">
+<meta name="twitter:title" content="建造者模式(Builder)-设计模式">
+<meta name="twitter:description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。  建造者模式包含如下四个角色： Builder-抽象建造者为创建一个产品对象的各个部件指定抽象接口； ConcreteBuilder-具体建造者实现了抽象建造者接口，实现各个部件的构造和">
 
 
 
@@ -127,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="https://zhangbihua.github.io/tags/"/>
+  <link rel="canonical" href="https://zhangbihua.github.io/2017/05/05/Builder/"/>
 
 
 
 
 
-  <title>All tags | biggs blog</title>
+  <title>建造者模式(Builder)-设计模式 | biggs blog</title>
   
 
 
@@ -299,25 +300,209 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline">All tags</h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://zhangbihua.github.io/2017/05/05/Builder/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangbihua">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/13499245?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="biggs blog">
+    </span>
 
     
-    
-      <div class="tag-cloud">
-        <div class="tag-cloud-title">
-            目前共计 10 个标签
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">建造者模式(Builder)-设计模式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-05T23:58:44+08:00">
+                2017-05-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design-pattern/" itemprop="url" rel="index">
+                    <span itemprop="name">design-pattern</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design-pattern/creational-patterns/" itemprop="url" rel="index">
+                    <span itemprop="name">creational-patterns</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
-        <div class="tag-cloud-tags">
-          <a href="/tags/javasctipt/" style="font-size: 30px; color: #111">javasctipt</a> <a href="/tags/单例模式/" style="font-size: 12px; color: #ccc">单例模式</a> <a href="/tags/原型模式/" style="font-size: 12px; color: #ccc">原型模式</a> <a href="/tags/建造者模式/" style="font-size: 12px; color: #ccc">建造者模式</a> <a href="/tags/抽象工厂模式/" style="font-size: 12px; color: #ccc">抽象工厂模式</a> <a href="/tags/桥接模式/" style="font-size: 12px; color: #ccc">桥接模式</a> <a href="/tags/简单工厂模式/" style="font-size: 12px; color: #ccc">简单工厂模式</a> <a href="/tags/组合模式/" style="font-size: 12px; color: #ccc">组合模式</a> <a href="/tags/装饰模式/" style="font-size: 12px; color: #ccc">装饰模式</a> <a href="/tags/适配器模式/" style="font-size: 12px; color: #ccc">适配器模式</a>
-        </div>
-      </div>
+      </header>
     
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。<br>软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，<br>实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。</p>
+</blockquote>
+<h3 id="建造者模式包含如下四个角色："><a href="#建造者模式包含如下四个角色：" class="headerlink" title="建造者模式包含如下四个角色："></a>建造者模式包含如下四个角色：</h3><ul>
+<li>Builder-抽象建造者为创建一个产品对象的各个部件指定抽象接口；</li>
+<li>ConcreteBuilder-具体建造者实现了抽象建造者接口，实现各个部件的构造和装配方法，定义并明确它所创建的复杂对象，也可以提供一个方法返回创建好的复杂产品对象；</li>
+<li>Product-产品角色是被构建的复杂对象，包含多个组成部件；</li>
+<li>Director-指挥者负责安排复杂对象的建造次序，指挥者与抽象建造者之间存在关联关系，可以在其construct()建造方法中调用建造者对象的部件构造与装配方法，完成复杂对象的建造</li>
+</ul>
+<h3 id="建造者模式的结构中引入了一个指挥者类，该类的作用主要有两个："><a href="#建造者模式的结构中引入了一个指挥者类，该类的作用主要有两个：" class="headerlink" title="建造者模式的结构中引入了一个指挥者类，该类的作用主要有两个："></a>建造者模式的结构中引入了一个指挥者类，该类的作用主要有两个：</h3><ul>
+<li>一方面它隔离了客户与生产过程；</li>
+<li>另一方面它负责控制产品的生成过程。指挥者针对抽象建造者编程，客户端只需要知道具体建造者的类型，即可通过指挥者类调用建造者的相关方法，返回一个完整的产品对象。</li>
+</ul>
+<hr>
+<h3 id="ES6实现"><a href="#ES6实现" class="headerlink" title="ES6实现"></a>ES6实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Builder</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Builder Class created!'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    buildPart(partName) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Builder.buildPart invoked!'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteBuilder</span> <span class="keyword">extends</span> <span class="title">Builder</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="keyword">super</span>();</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'ConcreteBuilder Class created!'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    buildPart(partName) &#123;</div><div class="line">        <span class="keyword">super</span>.buildPart(partName);</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'ConcreteBuilder.buildPart invoked!'</span>);</div><div class="line">        <span class="keyword">this</span>.product = <span class="keyword">new</span> Product(partName);</div><div class="line">    &#125;</div><div class="line">    getResult() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'ConcreteBuilder.getResult invoked!'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.product;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(material) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"Product class created"</span>);</div><div class="line">        <span class="keyword">this</span>.data = material</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Director</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="keyword">this</span>.structure = [<span class="string">'Prod1'</span>, <span class="string">'Prod2'</span>, <span class="string">'Prod3'</span>];</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"Director class created"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    construct() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"Director.Construct created"</span>);</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> prodName <span class="keyword">in</span> <span class="keyword">this</span>.structure) &#123;</div><div class="line">            <span class="keyword">let</span> builder = <span class="keyword">new</span> ConcreteBuilder();</div><div class="line">            builder.buildPart(<span class="keyword">this</span>.structure[prodName]);</div><div class="line">            builder.getResult();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> director = <span class="keyword">new</span> Director();</div><div class="line">director.construct();</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="Typescript实现"><a href="#Typescript实现" class="headerlink" title="Typescript实现"></a>Typescript实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div></pre></td><td class="code"><pre><div class="line">namespace BuilderPattern &#123;</div><div class="line">    <span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">UserBuilder</span> </span>&#123;</div><div class="line">        private name: string;</div><div class="line">        private age: number;</div><div class="line">        private phone: string;</div><div class="line">        private address: string;</div><div class="line"></div><div class="line">        <span class="keyword">constructor</span>(name: string) &#123;</div><div class="line">            <span class="keyword">this</span>.name = name;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        get Name() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">        &#125;</div><div class="line">        setAge(value: number): UserBuilder &#123;</div><div class="line">            <span class="keyword">this</span>.age = value;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">        &#125;</div><div class="line">        get Age() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.age;</div><div class="line">        &#125;</div><div class="line">        setPhone(value: string): UserBuilder &#123;</div><div class="line">            <span class="keyword">this</span>.phone = value;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">        &#125;</div><div class="line">        get Phone() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.phone;</div><div class="line">        &#125;</div><div class="line">        setAddress(value: string): UserBuilder &#123;</div><div class="line">            <span class="keyword">this</span>.address = value;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">        &#125;</div><div class="line">        get Address() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.address;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        build(): User &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">new</span> User(<span class="keyword">this</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</div><div class="line">        private name: string;</div><div class="line">        private age: number;</div><div class="line">        private phone: string;</div><div class="line">        private address: string;</div><div class="line"></div><div class="line">        <span class="keyword">constructor</span>(builder: UserBuilder) &#123;</div><div class="line">            <span class="keyword">this</span>.name = builder.Name;</div><div class="line">            <span class="keyword">this</span>.age = builder.Age;</div><div class="line">            <span class="keyword">this</span>.phone = builder.Phone;</div><div class="line">            <span class="keyword">this</span>.address = builder.Address</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        get Name() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">        &#125;</div><div class="line">        get Age() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.age;</div><div class="line">        &#125;</div><div class="line">        get Phone() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.phone;</div><div class="line">        &#125;</div><div class="line">        get Address() &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">this</span>.address;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考以下内容"><a href="#参考以下内容" class="headerlink" title="参考以下内容:"></a>参考以下内容:</h2><ul>
+<li><p><a href="https://design-patterns.readthedocs.io/zh_CN/latest/" target="_blank" rel="external">图说设计模式</a></p>
+</li>
+<li><p><a href="https://github.com/ryouaki/ECMAScript2016-Design-Patterns" target="_blank" rel="external">ECMAScript2016-Design-Patterns</a></p>
+</li>
+<li><a href="https://github.com/torokmark/design_patterns_in_typescript" target="_blank" rel="external">Design Patterns in TypeScript</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javasctipt/" rel="tag"># javasctipt</a>
+          
+            <a href="/tags/建造者模式/" rel="tag"># 建造者模式</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/05/Composite/" rel="next" title="组合模式(Composite)-设计模式">
+                <i class="fa fa-chevron-left"></i> 组合模式(Composite)-设计模式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/05/Bridge/" rel="prev" title="桥接模式(Bridge)-设计模式">
+                桥接模式(Bridge)-设计模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -326,6 +511,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -345,8 +534,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/13499245?v=3&s=460"
@@ -433,6 +631,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#建造者模式包含如下四个角色："><span class="nav-number">1.</span> <span class="nav-text">建造者模式包含如下四个角色：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建造者模式的结构中引入了一个指挥者类，该类的作用主要有两个："><span class="nav-number">2.</span> <span class="nav-text">建造者模式的结构中引入了一个指挥者类，该类的作用主要有两个：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6实现"><span class="nav-number">3.</span> <span class="nav-text">ES6实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Typescript实现"><span class="nav-number">4.</span> <span class="nav-text">Typescript实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考以下内容"><span class="nav-number"></span> <span class="nav-text">参考以下内容:</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -553,10 +767,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
