@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT bihua" />
+  <meta name="keywords" content="javasctipt,组合模式," />
 
 
 
@@ -90,16 +90,17 @@
 
 
 
-<meta name="description" content="javascript | Front-End developer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="All tags">
-<meta property="og:url" content="https://zhangbihua.github.io/tags/index.html">
+<meta name="description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。   ES6实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474">
+<meta name="keywords" content="javasctipt,组合模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="组合模式(Composite)-设计模式">
+<meta property="og:url" content="https://zhangbihua.github.io/2017/05/05/Composite/index.html">
 <meta property="og:site_name" content="biggs blog">
-<meta property="og:description" content="javascript | Front-End developer">
-<meta property="og:updated_time" content="2017-07-06T18:04:44.910Z">
+<meta property="og:description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。   ES6实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474">
+<meta property="og:updated_time" content="2017-07-07T17:26:03.613Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="All tags">
-<meta name="twitter:description" content="javascript | Front-End developer">
+<meta name="twitter:title" content="组合模式(Composite)-设计模式">
+<meta name="twitter:description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。   ES6实现12345678910111213141516171819202122232425262728293031323334353637383940414243444546474">
 
 
 
@@ -127,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="https://zhangbihua.github.io/tags/"/>
+  <link rel="canonical" href="https://zhangbihua.github.io/2017/05/05/Composite/"/>
 
 
 
 
 
-  <title>All tags | biggs blog</title>
+  <title>组合模式(Composite)-设计模式 | biggs blog</title>
   
 
 
@@ -299,25 +300,197 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline">All tags</h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://zhangbihua.github.io/2017/05/05/Composite/">
 
-</header>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhangbihua">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/13499245?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="biggs blog">
+    </span>
 
     
-    
-      <div class="tag-cloud">
-        <div class="tag-cloud-title">
-            目前共计 10 个标签
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">组合模式(Composite)-设计模式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-05T23:58:44+08:00">
+                2017-05-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design-pattern/" itemprop="url" rel="index">
+                    <span itemprop="name">design-pattern</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/design-pattern/structural-patterns/" itemprop="url" rel="index">
+                    <span itemprop="name">structural-patterns</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
         </div>
-        <div class="tag-cloud-tags">
-          <a href="/tags/javasctipt/" style="font-size: 30px; color: #111">javasctipt</a> <a href="/tags/单例模式/" style="font-size: 12px; color: #ccc">单例模式</a> <a href="/tags/原型模式/" style="font-size: 12px; color: #ccc">原型模式</a> <a href="/tags/建造者模式/" style="font-size: 12px; color: #ccc">建造者模式</a> <a href="/tags/抽象工厂模式/" style="font-size: 12px; color: #ccc">抽象工厂模式</a> <a href="/tags/桥接模式/" style="font-size: 12px; color: #ccc">桥接模式</a> <a href="/tags/简单工厂模式/" style="font-size: 12px; color: #ccc">简单工厂模式</a> <a href="/tags/组合模式/" style="font-size: 12px; color: #ccc">组合模式</a> <a href="/tags/装饰模式/" style="font-size: 12px; color: #ccc">装饰模式</a> <a href="/tags/适配器模式/" style="font-size: 12px; color: #ccc">适配器模式</a>
-        </div>
-      </div>
+      </header>
     
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。<br>软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，<br>实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。</p>
+</blockquote>
+<hr>
+<h3 id="ES6实现"><a href="#ES6实现" class="headerlink" title="ES6实现"></a>ES6实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Component Class created'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    operation() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Component.operation invoked'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    add(Component) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Component.add invoked'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    remove(Component) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Component.remove invoked'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    getChild(key) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Component.getChild invoked'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Leaf</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(name) &#123;</div><div class="line">        <span class="keyword">super</span>();</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Leaf Class created'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    operation() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Leaf.operation invoked'</span>);</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Composite</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>(name) &#123;</div><div class="line">        <span class="keyword">super</span>();</div><div class="line">        <span class="keyword">this</span>.name = name;</div><div class="line">        <span class="keyword">this</span>.children = [];</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Composite Class created'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    operation() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Composite operation for: '</span> + <span class="keyword">this</span>.name)</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> <span class="keyword">this</span>.children) &#123;</div><div class="line">            <span class="keyword">this</span>.children[i].operation();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    add(Component) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Composite.add invoked'</span>);</div><div class="line">        <span class="keyword">this</span>.children.push(Component);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    remove(Component) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Composite.remove invoked'</span>);</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> <span class="keyword">this</span>.children) &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.children[i] === Component) &#123;</div><div class="line">                <span class="keyword">this</span>.children.splice(i, <span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    getChild(key) &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Composite.getChild invoked'</span>);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.children[key];</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> composite1 = <span class="keyword">new</span> Composite(<span class="string">'C1'</span>);</div><div class="line">composite1.add(<span class="keyword">new</span> Leaf(<span class="string">'L1'</span>));</div><div class="line">composite1.add(<span class="keyword">new</span> Leaf(<span class="string">'L2'</span>));</div><div class="line"><span class="keyword">var</span> composite2 = <span class="keyword">new</span> Composite(<span class="string">'C2'</span>);</div><div class="line">composite2.add(composite1);</div><div class="line">composite1.getChild(<span class="number">1</span>).operation();</div><div class="line">composite2.operation();</div></pre></td></tr></table></figure>
+<hr>
+<h3 id="Typescript实现"><a href="#Typescript实现" class="headerlink" title="Typescript实现"></a>Typescript实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">namespace CompositePattern &#123;</div><div class="line">    <span class="keyword">export</span> interface Component &#123;</div><div class="line">        operation(): <span class="keyword">void</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">Composite</span> <span class="title">implements</span> <span class="title">Component</span> </span>&#123;</div><div class="line"></div><div class="line">        private list: Component[];</div><div class="line">        private s: <span class="built_in">String</span>;</div><div class="line"></div><div class="line">        <span class="keyword">constructor</span>(s: String) &#123;</div><div class="line">            <span class="keyword">this</span>.list = [];</div><div class="line">            <span class="keyword">this</span>.s = s;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public operation(): <span class="keyword">void</span> &#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">"`operation of `"</span>, <span class="keyword">this</span>.s)</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="keyword">this</span>.list.length; i += <span class="number">1</span>) &#123;</div><div class="line">                <span class="keyword">this</span>.list[i].operation();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public add(c: Component): <span class="keyword">void</span> &#123;</div><div class="line">            <span class="keyword">this</span>.list.push(c);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public remove(i: number): <span class="keyword">void</span> &#123;</div><div class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.list.length &lt;= i) &#123;</div><div class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"index out of bound!"</span>);</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">this</span>.list.splice(i, <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">export</span> <span class="class"><span class="keyword">class</span> <span class="title">Leaf</span> <span class="title">implements</span> <span class="title">Component</span> </span>&#123;</div><div class="line">        private s: <span class="built_in">String</span>;</div><div class="line">        <span class="keyword">constructor</span>(s: String) &#123;</div><div class="line">            <span class="keyword">this</span>.s = s;</div><div class="line">        &#125;</div><div class="line">        public operation(): <span class="keyword">void</span> &#123;</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">"`operation` of Leaf"</span>, <span class="keyword">this</span>.s, <span class="string">" is called."</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="参考以下内容"><a href="#参考以下内容" class="headerlink" title="参考以下内容:"></a>参考以下内容:</h2><ul>
+<li><a href="https://design-patterns.readthedocs.io/zh_CN/latest/" target="_blank" rel="external">图说设计模式</a></li>
+<li><a href="https://github.com/ryouaki/ECMAScript2016-Design-Patterns" target="_blank" rel="external">ECMAScript2016-Design-Patterns</a></li>
+<li><a href="https://github.com/torokmark/design_patterns_in_typescript" target="_blank" rel="external">Design Patterns in TypeScript</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javasctipt/" rel="tag"># javasctipt</a>
+          
+            <a href="/tags/组合模式/" rel="tag"># 组合模式</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/05/AbstractFactory/" rel="next" title="抽象工厂模式(Abstract Factory)-设计模式">
+                <i class="fa fa-chevron-left"></i> 抽象工厂模式(Abstract Factory)-设计模式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/05/Builder/" rel="prev" title="建造者模式(Builder)-设计模式">
+                建造者模式(Builder)-设计模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -326,6 +499,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -345,8 +522,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/13499245?v=3&s=460"
@@ -433,6 +619,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6实现"><span class="nav-number">1.</span> <span class="nav-text">ES6实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Typescript实现"><span class="nav-number">2.</span> <span class="nav-text">Typescript实现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考以下内容"><span class="nav-number"></span> <span class="nav-text">参考以下内容:</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -553,10 +755,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
