@@ -1,7 +1,7 @@
 ---
 title: 单例模式(Singleton)-设计模式
 date: 2017-05-05 23:58:44
-categories: [design-pattern, creational-patterns]
+categories: [design-pattern, Creational Patterns]
 tags: [javasctipt, 单例模式]
 ---
 > 软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。
@@ -40,7 +40,7 @@ console.log(ob1 === ob2);
 ---
 
 ### Typescript实现
-``` js
+``` ts
 class Singleton {
   private static instance: Singleton;
 

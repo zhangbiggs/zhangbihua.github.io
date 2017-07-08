@@ -1,7 +1,7 @@
 ---
 title: 装饰模式(Decorator)-设计模式
 date: 2017-05-05 23:58:44
-categories: [design-pattern, structural-patterns]
+categories: [design-pattern, Structural Patterns]
 tags: [javasctipt, 装饰模式]
 ---
 > 软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。
@@ -101,7 +101,7 @@ decoratorB.addedBehavior();
 ---
 
 ### Typescript实现
-``` js
+``` ts
 namespace DecoratorPattern {
 
     export interface Component {

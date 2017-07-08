@@ -1,7 +1,7 @@
 ---
 title:  建造者模式(Builder)-设计模式
 date: 2017-05-05 23:58:44
-categories: [design-pattern, creational-patterns]
+categories: [design-pattern, Creational Patterns]
 tags: [javasctipt,  建造者模式]
 ---
 > 软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。
@@ -79,7 +79,7 @@ director.construct();
 ---
 
 ### Typescript实现
-``` js
+``` ts
 namespace BuilderPattern {
     export class UserBuilder {
         private name: string;
