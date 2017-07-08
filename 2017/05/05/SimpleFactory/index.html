@@ -97,7 +97,7 @@
 <meta property="og:url" content="https://zhangbihua.github.io/2017/05/05/SimpleFactory/index.html">
 <meta property="og:site_name" content="biggs blog">
 <meta property="og:description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。  简单工厂模式的定义 简单工厂模式：当你需要什么，只需要传入一个正确的参数，就可以获取你所需要的对象，而无须知道其创建细节。  简单工厂模式包含三个角色： Factory-工厂角色负责实">
-<meta property="og:updated_time" content="2017-07-07T16:28:12.057Z">
+<meta property="og:updated_time" content="2017-07-08T07:06:35.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单工厂模式(Factory)-设计模式">
 <meta name="twitter:description" content="软件模式是将模式的一般概念应用于软件开发领域，即软件开发的 总体指导思路或参照样板。软件模式并非仅限于设计模式，还包括 架构模式、分析模式和过程模式等，实际上，在软件生存期的每一个阶段都存在着一些被认同的模式。  简单工厂模式的定义 简单工厂模式：当你需要什么，只需要传入一个正确的参数，就可以获取你所需要的对象，而无须知道其创建细节。  简单工厂模式包含三个角色： Factory-工厂角色负责实">
@@ -372,8 +372,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/design-pattern/creational-patterns/" itemprop="url" rel="index">
-                    <span itemprop="name">creational-patterns</span>
+                  <a href="/categories/design-pattern/Creational-Patterns/" itemprop="url" rel="index">
+                    <span itemprop="name">Creational Patterns</span>
                   </a>
                 </span>
 
@@ -420,7 +420,7 @@
 <hr>
 <h3 id="ES6实现"><a href="#ES6实现" class="headerlink" title="ES6实现"></a>ES6实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Product Class created'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteProduct</span> <span class="keyword">extends</span> <span class="title">Product</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="keyword">super</span>();</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'ConcreteProduct Class created'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Creator</span> </span>&#123;</div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Creator Class created'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    factoryMethod() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Creator.factoryMethod created'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    anOperation() &#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Creator.anOperation created'</span>);</div><div class="line">        <span class="keyword">this</span>.product = <span class="keyword">this</span>.factoryMethod();</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.product <span class="keyword">instanceof</span> ConcreteProduct);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteCreator</span> <span class="keyword">extends</span> <span class="title">Creator</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">constructor</span>() &#123;</div><div class="line">        <span class="keyword">super</span>();</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'ConcreteCreator Class created'</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    factoryMethod() &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ConcreteProduct();</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> factory = <span class="keyword">new</span> ConcreteCreator();</div><div class="line">factory.anOperation();</div></pre></td></tr></table></figure>
 <hr>
-<h3 id="Typescript实现"><a href="#Typescript实现" class="headerlink" title="Typescript实现"></a>Typescript实现</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">interface AbstractProduct &#123;</div><div class="line">    method(param?: any) : <span class="keyword">void</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteProductA</span> <span class="title">implements</span> <span class="title">AbstractProduct</span> </span>&#123;</div><div class="line">    method = <span class="function">(<span class="params">param?: any</span>) =&gt;</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"Method of ConcreteProductA"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteProductB</span> <span class="title">implements</span> <span class="title">AbstractProduct</span> </span>&#123;</div><div class="line">    method = <span class="function">(<span class="params">param?: any</span>) =&gt;</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"Method of ConcreteProductB"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ProductFactory</span> </span>&#123;</div><div class="line">    public <span class="keyword">static</span> createProduct(type: string) : AbstractProduct &#123;</div><div class="line">        <span class="keyword">if</span> (type === <span class="string">"A"</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ConcreteProductA();</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (type === <span class="string">"B"</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ConcreteProductB();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Typescript实现"><a href="#Typescript实现" class="headerlink" title="Typescript实现"></a>Typescript实现</h3><figure class="highlight ts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">interface</span> AbstractProduct &#123;</div><div class="line">    method(param?: <span class="built_in">any</span>) : <span class="built_in">void</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">class</span> ConcreteProductA <span class="keyword">implements</span> AbstractProduct &#123;</div><div class="line">    method = <span class="function">(<span class="params">param?: <span class="built_in">any</span></span>) =&gt;</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"Method of ConcreteProductA"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">class</span> ConcreteProductB <span class="keyword">implements</span> AbstractProduct &#123;</div><div class="line">    method = <span class="function">(<span class="params">param?: <span class="built_in">any</span></span>) =&gt;</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="string">"Method of ConcreteProductB"</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">class</span> ProductFactory &#123;</div><div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> createProduct(<span class="keyword">type</span>: <span class="built_in">string</span>) : AbstractProduct &#123;</div><div class="line">        <span class="keyword">if</span> (<span class="keyword">type</span> === <span class="string">"A"</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ConcreteProductA();</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">type</span> === <span class="string">"B"</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ConcreteProductB();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <hr>
 <h2 id="参考以下内容"><a href="#参考以下内容" class="headerlink" title="参考以下内容:"></a>参考以下内容:</h2><ul>
 <li><p><a href="https://design-patterns.readthedocs.io/zh_CN/latest/" target="_blank" rel="external">图说设计模式</a></p>
@@ -473,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/05/Singleton/" rel="next" title="单例模式(Singleton)-设计模式">
-                <i class="fa fa-chevron-left"></i> 单例模式(Singleton)-设计模式
+              <a href="/2017/05/05/State/" rel="next" title="状态模式(State)-设计模式">
+                <i class="fa fa-chevron-left"></i> 状态模式(State)-设计模式
               </a>
             
           </div>
@@ -483,8 +483,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/05/Prorotype/" rel="prev" title="原型模式(Prototype)-设计模式">
-                原型模式(Prototype)-设计模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/05/05/Singleton/" rel="prev" title="单例模式(Singleton)-设计模式">
+                单例模式(Singleton)-设计模式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -557,7 +557,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -568,7 +568,7 @@
             <div class="site-state-item site-state-categories"> 
               <!-- <a href="/categories/"> -->
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               <!-- </a> -->
               </a>
@@ -579,7 +579,7 @@
             <div class="site-state-item site-state-tags"> 
               <!-- <a href="/tags/"> -->
               <a href="/tags">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">23</span>
                 <span class="site-state-item-name">标签</span>
               <!-- </a> -->
               </a>
