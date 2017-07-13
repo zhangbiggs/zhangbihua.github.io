@@ -15,7 +15,8 @@ function* gen() {
 }
 
 let g = gen(); 
-``` 
+```
+
 ### 方法
 - Generator.prototype.next() 
 
