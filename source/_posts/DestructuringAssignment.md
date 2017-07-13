@@ -1,5 +1,5 @@
 ---
-title: Destructuring_assignment
+title: 解构赋值
 date: 2017-07-09 13:08:27
 categories: [javascript, MDN]
 tags: [解构赋值]
@@ -11,7 +11,7 @@ tags: [解构赋值]
 ### 作用
  - 交换变量
  ```js
- var a = 1;
+var a = 1;
 var b = 3;
 
 [a, b] = [b, a];
