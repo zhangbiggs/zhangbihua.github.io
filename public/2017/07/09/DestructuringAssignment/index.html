@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="解构赋值 解构赋值 语法是一个Javascript表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。  作用 交换变量 123456 var a = 1;var b = 3;[a, b] = [b, a];console.log(a); // 3console.log(b); // 1  解构数组 12345678910111213141516 let a, b, rest;/* arr">
+<meta name="description" content="解构赋值 解构赋值 语法是一个Javascript表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。  作用 交换变量 123456var a = 1;var b = 3;[a, b] = [b, a];console.log(a); // 3console.log(b); // 1  解构数组 12345678910111213141516 let a, b, rest;/* arra">
 <meta name="keywords" content="解构赋值">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Destructuring_assignment">
+<meta property="og:title" content="解构赋值">
 <meta property="og:url" content="https://zhangbihua.github.io/2017/07/09/DestructuringAssignment/index.html">
 <meta property="og:site_name" content="biggs blog">
-<meta property="og:description" content="解构赋值 解构赋值 语法是一个Javascript表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。  作用 交换变量 123456 var a = 1;var b = 3;[a, b] = [b, a];console.log(a); // 3console.log(b); // 1  解构数组 12345678910111213141516 let a, b, rest;/* arr">
-<meta property="og:updated_time" content="2017-07-09T07:09:00.587Z">
+<meta property="og:description" content="解构赋值 解构赋值 语法是一个Javascript表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。  作用 交换变量 123456var a = 1;var b = 3;[a, b] = [b, a];console.log(a); // 3console.log(b); // 1  解构数组 12345678910111213141516 let a, b, rest;/* arra">
+<meta property="og:updated_time" content="2017-07-13T04:01:30.305Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Destructuring_assignment">
-<meta name="twitter:description" content="解构赋值 解构赋值 语法是一个Javascript表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。  作用 交换变量 123456 var a = 1;var b = 3;[a, b] = [b, a];console.log(a); // 3console.log(b); // 1  解构数组 12345678910111213141516 let a, b, rest;/* arr">
+<meta name="twitter:title" content="解构赋值">
+<meta name="twitter:description" content="解构赋值 解构赋值 语法是一个Javascript表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。  作用 交换变量 123456var a = 1;var b = 3;[a, b] = [b, a];console.log(a); // 3console.log(b); // 1  解构数组 12345678910111213141516 let a, b, rest;/* arra">
 
 
 
@@ -134,7 +134,7 @@
 
 
 
-  <title>Destructuring_assignment | biggs blog</title>
+  <title>解构赋值 | biggs blog</title>
   
 
 
@@ -326,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Destructuring_assignment</h1>
+          <h1 class="post-title" itemprop="name headline">解构赋值</h1>
         
 
         <div class="post-meta">
@@ -411,7 +411,7 @@
 </blockquote>
 <h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><ul>
 <li><p>交换变量</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">3</span>;</div><div class="line"></div><div class="line">[a, b] = [b, a];</div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 3</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">3</span>;</div><div class="line"></div><div class="line">[a, b] = [b, a];</div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 3</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 1</span></div></pre></td></tr></table></figure>
 </li>
 <li><p>解构数组</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">let</span> a, b, rest;</div><div class="line"></div><div class="line"><span class="comment">/* array 解构赋值 */</span></div><div class="line">[a, b] = [<span class="number">1</span>, <span class="number">2</span>];</div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></div><div class="line"></div><div class="line">[a, b, ...rest] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></div><div class="line"><span class="built_in">console</span>.log(rest); <span class="comment">// [3, 4, 5]</span></div><div class="line"></div><div class="line"><span class="comment">/* object 解构赋值 */</span></div><div class="line">(&#123;a, b&#125; = &#123;<span class="attr">a</span>:<span class="number">1</span>, <span class="attr">b</span>:<span class="number">2</span>&#125;);</div><div class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">// 2</span></div></pre></td></tr></table></figure>
@@ -494,8 +494,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/09/instanceTypeofContructor/" rel="next" title="js对象属性判断">
-                <i class="fa fa-chevron-left"></i> js对象属性判断
+              <a href="/2017/07/09/generatorAndIterator/" rel="next" title="生成器(Generator)">
+                <i class="fa fa-chevron-left"></i> 生成器(Generator)
               </a>
             
           </div>
@@ -503,6 +503,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/13/Class/" rel="prev" title="class">
+                class <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -574,7 +578,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -596,7 +600,7 @@
             <div class="site-state-item site-state-tags"> 
               <!-- <a href="/tags/"> -->
               <a href="/tags">
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">标签</span>
               <!-- </a> -->
               </a>
